@@ -203,7 +203,7 @@ body {
   /* Prevent text wrapping shift */
   word-break: break-word;       /* break long words gracefully */
   overflow-wrap: break-word;    /* ensure wrapping is consistent */
-  min-height: 300px;            /* equal height for all cards */
+  min-height: 200px;            /* equal height for all cards */
 }
 .cards-grid .card h3 {
   font-size: 1.4rem;

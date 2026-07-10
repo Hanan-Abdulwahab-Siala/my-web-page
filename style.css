@@ -195,10 +195,10 @@ body {
   cursor: pointer;
   box-sizing: border-box;
 
-  /* Lock font to Georgia */
+  /* Lock font and spacing */
   font-family: 'Georgia', serif;
   font-size: 1rem;
-  line-height: 1.8; /* more breathing room between lines */
+  line-height: 1.8;   /* extra space between lines */
   color: #444;
 }
 
@@ -207,7 +207,7 @@ body {
   font-weight: 600;
   color: #111c24;
   margin-bottom: 18px;
-  font-family: 'Georgia', serif;
+  font-family: 'Georgia', serif; /* lock heading font */
 }
 
 .cards-grid .card p {

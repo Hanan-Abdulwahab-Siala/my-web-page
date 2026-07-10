@@ -188,15 +188,16 @@ body {
 
 .cards-grid .card {
   background: #fff;
-  border: 2px solid rgba(0, 0, 0, 0.08); /* always 2px */
+  border: 2px solid transparent; /* always 2px, transparent initially */
   border-radius: 8px;
-  padding: 29px; /* reduce padding slightly to balance */
+  padding: 30px;
   transition: all 0.3s ease;
   cursor: pointer;
+  box-sizing: border-box; /* ensures border is included in size calculation */
 }
 
 .cards-grid .card:hover {
-  border: 2px solid #FFA500; /* orange border */
+  border: 2px solid #FFA500; /* orange border appears */
   transform: translateY(-5px); /* lift effect */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* shadow feedback */
 }

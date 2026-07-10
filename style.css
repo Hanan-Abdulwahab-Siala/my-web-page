@@ -198,20 +198,25 @@ body {
   /* Lock font and spacing */
   font-family: 'Georgia', serif;
   font-size: 1rem;
-  line-height: 1.8;   /* extra space between lines */
+  line-height: 1.8;
   color: #444;
-}
 
+  /* Ensure equal height */
+  min-height: 420px;  /* adjust based on your longest card */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 .cards-grid .card h3 {
   font-size: 1.4rem;
   font-weight: 600;
   color: #111c24;
   margin-bottom: 18px;
-  font-family: 'Georgia', serif; /* lock heading font */
+  font-family: 'Georgia', serif;
 }
 
 .cards-grid .card p {
-  margin-bottom: 12px; /* space between paragraphs */
+  margin-bottom: 12px;
 }
 
 .cards-grid .card:hover {
@@ -223,6 +228,9 @@ body {
 @media (max-width: 768px) {
   .cards-grid {
     grid-template-columns: 1fr; /* stack cards */
+  }
+  .cards-grid .card {
+    min-height: auto; /* let them shrink naturally on mobile */
   }
 }
 

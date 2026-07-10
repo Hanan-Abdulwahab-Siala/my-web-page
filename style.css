@@ -186,39 +186,28 @@ body {
   margin-top: 30px;
 }
 
-.card {
+.cards-grid .card {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   padding: 30px;
   transition: all 0.3s ease; /* smooth hover */
   cursor: pointer;
+  position: relative; /* ensures hover is not blocked */
+  z-index: 1;
 }
 
-.card:hover {
+.cards-grid .card:hover {
   border: 2px solid #FFA500; /* orange border */
   transform: translateY(-5px); /* lift effect */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* shadow feedback */
 }
-
-.card h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #111c24;
-  margin-bottom: 15px;
-}
-
-.card p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
-}
-
 @media (max-width: 768px) {
   .cards-grid {
     grid-template-columns: 1fr; /* stack cards */
   }
 }
+
 
 /* Inline List */
 .news-item, .list-item {

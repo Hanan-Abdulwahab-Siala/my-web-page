@@ -188,18 +188,34 @@ body {
 
 .cards-grid .card {
   background: #fff;
-  border: 2px solid transparent; /* always 2px, transparent initially */
+  border: 2px solid transparent; /* always 2px */
   border-radius: 8px;
   padding: 30px;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-sizing: border-box; /* ensures border is included in size calculation */
+  box-sizing: border-box;
+
+  /* Lock font to Georgia */
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.cards-grid .card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111c24;
+  margin-bottom: 15px;
+
+  /* Lock heading font too */
+  font-family: 'Georgia', serif;
 }
 
 .cards-grid .card:hover {
-  border: 2px solid #FFA500; /* orange border appears */
-  transform: translateY(-5px); /* lift effect */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* shadow feedback */
+  border: 4px solid #FFA500; /* thicker orange border */
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -207,6 +223,7 @@ body {
     grid-template-columns: 1fr; /* stack cards */
   }
 }
+
 
 
 /* Inline List */

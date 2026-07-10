@@ -374,31 +374,31 @@ body {
 .sdg-item {
   display: flex;
   align-items: center;       /* center vertically */
-  gap: 12px;                 /* tighter spacing */
-  margin-top: 20px;
-  justify-content: flex-end; /* align block to the right */
+  gap: 15px;
+  margin-top: 25px;
+  justify-content: flex-start; /* align block to the left */
 }
 
 .sdg-icon {
-  width: 70px;   /* smaller, consistent with text scale */
+  width: 70px;   /* smaller, balanced with text */
   height: auto;
 }
 
 .sdg-text {
   display: flex;
   flex-direction: column;
-  text-align: right;         /* align text to the right */
+  text-align: left;          /* align text to the left */
 }
 
 .sdg-text h3 {
   margin: 0;
-  font-size: 1.2rem;         /* matches intro heading scale */
+  font-size: 1.2rem;         /* heading size similar to intro section */
   font-weight: 700;
 }
 
 .sdg-text p {
   margin: 0;
-  font-size: 1rem;           /* matches intro body text */
+  font-size: 1rem;           /* body text size */
 }
 
 /* Main SDG description text */
@@ -406,7 +406,7 @@ body {
   font-size: 1rem;           /* same as intro section paragraph */
   line-height: 1.6;
   margin-bottom: 18px;
-  text-align: right;         /* align description to the right */
+  text-align: left;          /* align description to the left */
 }
 
 /* ===== Footer Section ===== */

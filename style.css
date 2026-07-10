@@ -178,7 +178,6 @@ body {
 .btn-dark { background: #111c24; color: #fff; }
 .btn-outline { border: 1px solid rgba(0, 0, 0, 0.15); color: #111c24; }
 
-
 /* Research Cards */
 .cards-grid {
   display: grid;
@@ -188,8 +187,8 @@ body {
 }
 
 .cards-grid .research-card {
-  background: #fff;
-  border: 2px solid transparent;
+  background: #fff;              /* white background always visible */
+  border: 2px solid #ddd;        /* light gray border visible by default */
   border-radius: 8px;
   padding: 20px;
   box-sizing: border-box;
@@ -219,10 +218,13 @@ body {
 }
 
 .cards-grid .research-card:hover {
-  border-color: #FFA500;
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-color: #FFA500;         /* orange border on hover */
+  transform: translateY(-5px);   /* lift effect */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* shadow on hover */
 }
+
+
+
 /* Inline List */
 .news-item, .list-item {
     display: flex;

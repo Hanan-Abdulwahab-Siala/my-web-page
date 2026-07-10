@@ -214,6 +214,45 @@ body {
     margin-bottom: 10px;
 }
 
+
+/* Research Cards Hover and Clickable Style */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  border: 2px solid #FFA500; /* orange border on hover */
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111c24;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+
+
 /* Inline List */
 .news-item, .list-item {
     display: flex;

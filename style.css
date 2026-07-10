@@ -179,57 +179,47 @@ body {
 .btn-outline { border: 1px solid rgba(0, 0, 0, 0.15); color: #111c24; }
 
 
+/* Research Cards */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 25px;
   margin-top: 30px;
 }
 
-/*.cards-grid .research-card {
-  background: #fff;
-  border: 2px solid transparent; /* always 2px */
-  border-radius: 8px;
-  padding: 20px;                 /* reduced padding */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;    /*transition: all 0.3s ease; */
-  cursor: pointer;
-  box-sizing: border-box;
-  font-family: 'Georgia', serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
-}*/
 .cards-grid .card {
   background: #fff;
   border: 2px solid transparent;
   border-radius: 8px;
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  cursor: pointer;
   box-sizing: border-box;
+
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+
+  cursor: pointer;
+
+  /* Do not use transition: all */
+  transition: border-color 0.3s ease,
+              box-shadow 0.3s ease;
 }
 
-/*.cards-grid .research-card h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #111c24;
-  margin-bottom: 12px;           
-  font-family: 'Georgia', serif;
-}
-*/
-.cards-grid .research-card h3 {
+.cards-grid .card h3 {
   font-size: 1.4rem;
   font-weight: 600;
   color: #111c24;
   margin-bottom: 12px;
+  font-family: 'Georgia', serif;
 }
-.cards-grid .research-card p {
-  margin-bottom: 8px;            /* tighter paragraph spacing */
+
+.cards-grid .card p {
+  margin-bottom: 8px;
 }
 
 .cards-grid .card:hover {
   border-color: #FFA500;
-  transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 

@@ -222,14 +222,20 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 } */
 
-.cards-grid .card:hover {
+/* .cards-grid .card:hover {
   border-color: transparent;
   box-shadow:
     0 0 0 4px #FFA500,
     0 4px 12px rgba(0,0,0,.1);
   transform: translateY(-5px);
-}
+} */
 
+.cards-grid .card:hover {
+  outline: 4px solid #FFA500;
+  outline-offset: 0;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
 
 /* Inline List */
 .news-item, .list-item {

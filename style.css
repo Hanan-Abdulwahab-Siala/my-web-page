@@ -199,19 +199,14 @@ body {
   line-height: 1.6;
   color: #444;
 }*/
-.cards-grid .research-card {
+.cards-grid .card {
   background: #fff;
   border: 2px solid transparent;
   border-radius: 8px;
   padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
   box-sizing: border-box;
-
-  font-family: Georgia, serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
-
-  transition: transform .3s ease, box-shadow .3s ease, background-color .3s ease;
 }
 
 /*.cards-grid .research-card h3 {
@@ -233,11 +228,10 @@ body {
 }
 
 .cards-grid .card:hover {
-    background: #f8f8f8;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  border-color: #FFA500;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
 
 /* Inline List */
 .news-item, .list-item {

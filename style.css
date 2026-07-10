@@ -181,7 +181,7 @@ body {
 /* Research Cards */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* always 3 horizontal squares */
+  grid-template-columns: repeat(3, 1fr); /* 3 horizontal squares */
   gap: 25px;
   margin-top: 30px;
 }
@@ -191,14 +191,14 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   padding: 30px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* smooth hover */
   cursor: pointer;
 }
 
 .card:hover {
   border: 2px solid #FFA500; /* orange border */
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* visible hover feedback */
+  transform: translateY(-5px); /* lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* shadow feedback */
 }
 
 .card h3 {

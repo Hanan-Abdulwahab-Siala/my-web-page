@@ -370,52 +370,59 @@ body {
     background-color: #f2eee2;
 }
 
+/* SDG section background */
+.bg-sdg {
+    background-color: #f2eee2;
+}
+
+/* Container adjustments */
+.section-content {
+  max-width: 100%;        /* allow full width */
+  width: 100%;            /* stretch across page */
+  margin: 0 auto;         /* keep centered if needed */
+  padding: 0 40px;        /* add side padding for readability */
+}
+
 /* SDG icon + text block */
 .sdg-item {
   display: flex;
-  align-items: center;       /* center vertically */
+  align-items: center;
   gap: 15px;
   margin-top: 25px;
-  margin-bottom: 30px;       /* empty line under image block */
-  justify-content: flex-start; /* align block to the left */
+  margin-bottom: 30px;    /* empty line under image block */
+  justify-content: flex-start;
 }
 
-/* SDG icon */
 .sdg-icon {
-  width: 70px;   /* balanced size */
+  width: 70px;
   height: auto;
 }
 
-/* SDG text next to icon */
 .sdg-text {
   display: flex;
   flex-direction: column;
-  text-align: left;          /* align text to the left */
+  text-align: left;
 }
 
 .sdg-text h3 {
   margin: 0;
-  font-size: 1.2rem;         /* heading size */
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 .sdg-text p {
   margin: 0;
-  font-size: 1rem;           /* body text size */
+  font-size: 1rem;
 }
 
+/* Main SDG description text */
 .sdg-description {
-  font-size: 1rem;           /* consistent with intro section */
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 18px;
-  text-align: left;          /* align description to the left */
-  width: 100%;               /* force full width of container */
-  max-width: none;           /* remove any width limit */
-}
-
-/* Optional: ensure spacing is respected inside the section */
-.section-content {
-  padding-bottom: 20px;      /* prevents margin collapse */
+  text-align: left;
+  width: 100%;            /* stretch full width */
+  max-width: none;         /* remove restriction */
 }
 
 /* ===== Footer Section ===== */

@@ -370,13 +370,14 @@ body {
     background-color: #f2eee2;
 }
 
+/* SDG icon + text block */
 .sdg-item {
   display: flex;
-  align-items: center;
+  align-items: center;       /* center vertically */
   gap: 15px;
   margin-top: 25px;
-  margin-bottom: 25px; /* empty line under the image block */
-  justify-content: flex-start; /* keep aligned left */
+  margin-bottom: 30px;       /* 👈 empty line under image block */
+  justify-content: flex-start; /* align block to the left */
 }
 
 .sdg-icon {

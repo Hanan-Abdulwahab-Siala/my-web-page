@@ -178,6 +178,13 @@ body {
 .btn-dark { background: #111c24; color: #fff; }
 .btn-outline { border: 1px solid rgba(0, 0, 0, 0.15); color: #111c24; }
 
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 25px;
+  margin-top: 30px;
+}
 .cards-grid .card {
   background: #fff;
   border: 2px solid transparent; /* always 2px */

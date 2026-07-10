@@ -365,21 +365,22 @@ body {
   background-color: #fdfbf7;  
 }
 
-
-/* SDG icon styling */
+/* SDG section background */
 .bg-sdg {
     background-color: #f2eee2;
 }
 
+/* SDG icon + text block */
 .sdg-item {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  margin-top: 30px;
+  align-items: center;       /* center vertically */
+  gap: 15px;
+  margin-top: 25px;
+  justify-content: flex-end; /* align block to the right */
 }
 
 .sdg-icon {
-  width: 100px;   /* slightly larger icon */
+  width: 80px;   /* slightly smaller icon */
   height: auto;
 }
 
@@ -387,25 +388,26 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 5px;
+  text-align: right;         /* align text to the right */
 }
 
 .sdg-text h3 {
   margin: 0;
-  text-align: left;
-  font-size: 2rem;        /* enlarge SDG 13 */
+  font-size: 1.5rem;         /* reduced size */
   font-weight: 700;
 }
 
 .sdg-text p {
   margin: 0;
-  text-align: left;
-  font-size: 1.5rem;      /* enlarge Climate Action */
+  font-size: 1.2rem;         /* reduced size */
 }
 
+/* Main SDG description text */
 .sdg-description {
-  font-size: 1.5rem;   /* larger for readability */
-  line-height: 1.8;
+  font-size: 1.1rem;         /* smaller, more readable */
+  line-height: 1.6;
   margin-bottom: 20px;
+  text-align: right;         /* align description to the right */
 }
 
 /* ===== Footer Section ===== */

@@ -188,20 +188,19 @@ body {
 
 .cards-grid .card {
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent; /* always 2px, but transparent initially */
   border-radius: 8px;
   padding: 30px;
-  transition: all 0.3s ease; /* smooth hover */
+  transition: all 0.3s ease;
   cursor: pointer;
-  position: relative; /* ensures hover is not blocked */
-  z-index: 1;
 }
 
 .cards-grid .card:hover {
-  border: 2px solid #FFA500; /* orange border */
+  border-color: #FFA500; /* orange border appears */
   transform: translateY(-5px); /* lift effect */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* shadow feedback */
 }
+
 @media (max-width: 768px) {
   .cards-grid {
     grid-template-columns: 1fr; /* stack cards */

@@ -216,11 +216,20 @@ body {
   margin-bottom: 8px;            /* tighter paragraph spacing */
 }
 
-.cards-grid .card:hover {
+/* .cards-grid .card:hover {
   border-color: #FFA500;
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+
+.cards-grid .card:hover {
+  border-color: transparent;
+  box-shadow:
+    0 0 0 4px #FFA500,
+    0 4px 12px rgba(0,0,0,.1);
+  transform: translateY(-5px);
 }
+
 
 /* Inline List */
 .news-item, .list-item {

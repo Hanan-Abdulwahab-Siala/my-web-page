@@ -402,11 +402,11 @@ body {
   font-size: 1.5rem;      /* enlarge Climate Action */
 }
 
-
 /* Main SDG description text */
 .sdg-description {
-  font-size: 1.35rem;
-  line-height: 1.7;
+  font-size: 1.5rem;   /* larger for readability */
+  line-height: 1.8;
+  margin-bottom: 20px; /* spacing between paragraphs */
 }
 
 /* ===== Footer Section ===== */

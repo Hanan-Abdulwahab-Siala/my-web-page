@@ -188,17 +188,15 @@ body {
 
 .cards-grid .card {
   background: #fff;
-  border: 2px solid rgba(0, 0, 0, 0.08); /* fixed border */
+  border: 2px solid rgba(0, 0, 0, 0.08); /* always 2px */
   border-radius: 8px;
-  padding: 30px;
+  padding: 29px; /* reduce padding slightly to balance */
   transition: all 0.3s ease;
   cursor: pointer;
-  position: relative;
 }
 
 .cards-grid .card:hover {
-  outline: 2px solid #FFA500; /* orange outline on hover */
-  outline-offset: -2px;       /* aligns with border */
+  border: 2px solid #FFA500; /* orange border */
   transform: translateY(-5px); /* lift effect */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* shadow feedback */
 }

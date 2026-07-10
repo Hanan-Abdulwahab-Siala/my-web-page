@@ -217,12 +217,10 @@ body {
 }
 
 .cards-grid .card:hover {
-  border: 4px solid #FFA500;     /* thicker orange border */
+  border-color: #FFA500;
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-
 
 /* Inline List */
 .news-item, .list-item {

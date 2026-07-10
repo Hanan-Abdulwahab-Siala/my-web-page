@@ -223,11 +223,6 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* shadow on hover */
 }
 
-/* .bg-research {
-  background: #f5f5f5;
-  padding: 40px 0;
-} */
-
 /* Inline List */
 .news-item, .list-item {
     display: flex;

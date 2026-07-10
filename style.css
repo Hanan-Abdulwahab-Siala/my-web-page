@@ -380,7 +380,7 @@ body {
 }
 
 .sdg-icon {
-  width: 80px;   /* slightly smaller icon */
+  width: 80px;   /* smaller, consistent with intro section */
   height: auto;
 }
 
@@ -393,18 +393,18 @@ body {
 
 .sdg-text h3 {
   margin: 0;
-  font-size: 1.5rem;         /* reduced size */
+  font-size: 1.2rem;         /* matches intro section heading scale */
   font-weight: 700;
 }
 
 .sdg-text p {
   margin: 0;
-  font-size: 1.2rem;         /* reduced size */
+  font-size: 1rem;           /* matches intro section body text */
 }
 
 /* Main SDG description text */
 .sdg-description {
-  font-size: 1.1rem;         /* smaller, more readable */
+  font-size: 1rem;           /* same as intro section paragraph */
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: right;         /* align description to the right */
